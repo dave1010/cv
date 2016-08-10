@@ -1,0 +1,40 @@
+- title: Head of Coding
+  startDate: September 2008
+  endDate: June 2009
+  company: Creative Flavour
+  description: |
+    A young enterprise start-up created to run an end of year event, funded by client work for local companies
+
+    I was responsible for a three man development team which built the client web sites and the social web application which users interacted with the event by uploading and voting on videos (youtube api).
+
+    I also stage managed the live event. The attendance of the event eclipsed those of previous years and we received rave reviews from the local press.
+
+- title: Self Employed
+  startDate: June 2009
+  endDate: January 2012
+  company: Chris Sherry Web Development
+  description: |
+    Upon leaving university and finding job opportunities limited I decided to register as self employed and created a variety of web sites, print artwork and marketing campaigns for connections I had made through university and work in technical theatre, which led me to specialise in marketing and producing material for the entertainment industry.
+
+    I developed skills in all areas of web site production from client meetings and specification writing, to administrating live applications and server administration.
+
+- title: PHP Web Developer
+  startDate: January 2012
+  endDate: October 2013
+  company: Freshleaf Media
+  description: |
+    Key member of a development team at a small web development agency as both a frontend and backend developer. I was responsible for the advancement of the company's flagship content management system, was one of the developers working on the company's largest project which was a recruitment startup, and took on project management responsibilities in the absence of the company project manager during maternity leave.
+
+- title: Web and Mobile Developer
+  startDate: October 2013
+  endDate: June 2014
+  company: Createful
+  description: |
+    Working primarily as a PHP/Javascript developer for designing and building APIs for mobile web applications, and web applications for large business to customer clients.
+
+- title: Web App Engineer
+  startDate: June 2014
+  endDate: August 2016
+  company: Base
+  description: |
+    Developed applications for the web and apis for mobile. One of a team of 4 PHP developers which built flagship product. Lead the development team to winning the Smarter Travel Live Hackathon 2016.

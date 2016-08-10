@@ -1,0 +1,14 @@
+{
+    "name": "norbie/cv",
+    "authors": [
+        {
+            "name": "Chris Sherry",
+            "email": "chris@chrissherry.co.uk"
+        }
+    ],
+    "require": {
+        "silex/silex": "~2.0",
+        "twig/twig": "^1.24",
+        "symfony/yaml": "^3.1"
+    }
+}

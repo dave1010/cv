@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+
+  </title>
+  <meta name="robots" content="index,nofollow">
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+
+  <meta name="viewport" content="width=device-width"/>
+  <meta name="description" content=""/>
+  <meta charset="UTF-8"/>
+
+  <link type="text/css" rel="stylesheet" href="/css/style.css">
+  <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700|Roboto:400,300' rel='stylesheet' type='text/css'>
+
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-17526646-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+</head>
+<body id="top">
+<div id="cv">
+  <div class="mainDetails">
+    <div id="headshot">
+      <img class="headshot" src="/images/me.jpg" alt="Chris Sherry's Headshot"/>
+    </div>
+
+    <div id="name">
+      <h1>Chris Sherry</h1>
+
+      <h2>Full stack developer</h2>
+    </div>
+
+    <div id="contactDetails">
+      <ul>
+        <li>
+          <img class="social-icon xperia-icon" src="/images/xperia-mini-mini.png">
+          <!--googleoff: all-->{{ contact_details.phone }}<!--googleon: all-->
+        </li>
+        <li>
+          <img class="social-icon email-icon" src="/images/email.png"/>
+          <!--googleoff: all--><a href='mailt&#111;&#58;%6&#51;&#37;68ris&#64;&#99;&#104;rissh&#101;rry%2Eco&#46;&#117;k'>chris&#64;chri&#115;sherry&#46;co&#46;uk</a><!--googleon: all-->
+        </li>
+        <li>
+          <img class="social-icon" src="/images/world.png"/>
+          <a href="{{ contact_details.website }}">{{ contact_details.website }}</a>
+        </li>
+
+        <li>
+          <img class="social-icon twitter-icon" src="/images/twitter-bird-callout.png"/>
+          <a href="https://twitter.com/{{ contact_details.twitter }}">@{{ contact_details.twitter }}</a></li>
+
+      </ul>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+  <div id="mainArea" class="">
+    <section>
+      <p class="sectionHeading">Core Skills</p>
+      <ul class="keySkills coreSkills">
+       {% for skill in skills.skillset|sort %}
+        <li>{{ skill }}</li>
+       {% endfor %}
+      </ul>
+
+      <div class="clear"></div>
+    </section>
+
+    <section>
+      <p class="sectionHeading">Toolset</p>
+      <ul class="keySkills">
+        {% for skill in skills.toolset|sort %}
+          <li>{{ skill }}</li>
+        {% endfor %}
+      </ul>
+
+    </section>
+
+    <section>
+      <p class="sectionHeading">Employment History</p>
+      {% for job in work_history|reverse %}
+
+      <article class="clearfix">
+        <div class="sectionTitle">
+          <h2>{{ job.title }}
+            <span class="date">{{ job.startDate }}  - {{ job.endDate }}</span>
+                <span class="company">
+                   {{ job.company }}
+                </span>
+          </h2>
+
+        </div>
+        <div class="sectionContent">
+          <p>{{ job.description|nl2br }}</p>
+        </div>
+      </article>
+
+      {% endfor %}
+    </section>
+
+    <section class="clearfix">
+      <p class="sectionHeading">Community Involvement</p>
+      {% for role in non_work_history %}
+        <article class="clearfix">
+          <div class="sectionTitle">
+            <h2>{{ role.role }}
+              <span class="date">{{ role.startDate }}  - {{ role.endDate }}</span>
+                <span class="company">
+                   {{ role.name }}
+                </span>
+            </h2>
+
+          </div>
+          <div class="sectionContent">
+            <p>{{ role.description|nl2br }}</p>
+          </div>
+        </article>
+      {% endfor %}
+    </section>
+
+    <section class="education clearfix">
+      <p class="sectionHeading">Education</p>
+      {% for course in education %}
+      <article>
+        <div class="sectionTitle">
+          <h2>
+            {{ course.award }}
+            <span class="course">
+               {{ course.title }}
+            </span>
+            <span class="date">{{ course.date }}</span>
+            <span class="uni">{{ course.institution }}</span>
+          </h2>
+        </div>
+
+
+        <div class="sectionContent">
+          <p>{{ course.description|nl2br }}</p>
+        </div>
+      </article>
+      {% endfor %}
+    </section>
+  </div>
+  <div class="options no-print">
+    <a title="Print" href="javascript:window.print()" class="no-print print"/>
+    <img src="/images/printer.png"/>
+    </a>
+
+    <a title="Fork on Github" href="https://github.com/chrisnx/cv" class="no-print">
+      <img src="/images/php_48.png"/>
+
+      <a title="Download as PDF" href="cv.pdf" class="no-print pdf" />
+      <img src="/images/file_pdf.png"/>
+    </a>
+
+    <a title="JSON API" href="/api/v1/cv" class="no-print xml"/>
+    <img src="/images/file_json.png"/>
+    </a>
+
+
+    </a>
+  </div>
+</div>
+</div>
+
+</body>
+</html>
