@@ -27,12 +27,12 @@ toolset:
     - Silex
     - Twig
     - Laravel
-    - Codeignitor
+    - CodeIgniter
     - CSS3 (BEM)
     - SASS
     - Bootstrap
-    - Javascript
-    - JQuery
+    - JavaScript
+    - jQuery
     - Vagrant
     - Ansible
     - WordPress (Trellis & Bedrock)
